@@ -1,0 +1,15 @@
+body{
+    margin: 0px;
+    background-color: rgb(41, 41, 41);
+}
+
+    /*Header*/
+
+.cabecera{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(145, 98, 255);
+    display: flex;
+    justify-content: space-around;
+
+}
