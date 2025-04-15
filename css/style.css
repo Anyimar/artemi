@@ -78,3 +78,65 @@ figure img{
 }
 
 /* Carrucel*/
+.carrucel_container{
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carrucel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.elemento {
+    min-width: 100%;
+    position: relative;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.elemento img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.titulo_elemento {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.navC {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.navC.prev {
+    left: 10px;
+}
+
+.navC.next {
+    right: 10px;
+}
+
+.navC:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
