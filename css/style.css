@@ -45,6 +45,7 @@ figure img{
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 600;
     transition: font-size 0.3s ease;
 }
 .nav a:hover {
