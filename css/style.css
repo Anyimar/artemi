@@ -1,3 +1,16 @@
+:root{
+    --negro: #000000;
+    --blanco: #ffffff;
+    --gris-primario: #2e2e2e;
+    --morado-azulado: #8395e8;
+    --morado-primario: #7d1dd7;
+    --fuccia-primario: #d72b60;
+    --rosa-complementario: #ea8a96;
+    --blanco-rosita: #f8c6ec;
+    --negro-morado: #292335;
+    --negro-vino: #4c0e2d;
+}
+
 body{
     margin: 0px;
     background-color: var(--gris-oscuro);
