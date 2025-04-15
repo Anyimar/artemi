@@ -2,7 +2,6 @@ const carousel = document.querySelector('.carrusel');
 const slides = document.querySelectorAll('.elemento');
 const nextBtn = document.querySelector('.next');
 const prevBtn = document.querySelector('.prev');
-
 let currentIndex = 0;
 let intervalTime = 5000; // cada 5 segundos
 let autoSlide = setInterval(moveToNextSlide, intervalTime);

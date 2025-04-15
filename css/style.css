@@ -67,28 +67,41 @@ figure img{
 }
 
 /* Estilos de contenido principal*/
+main{
+    background-color: var(--gris-primario);
+}
 
 
 /* Cuadro para la imagen*/
 .visualPrincipal{
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 90%;
     height: 200px;
-    background-color: var(--gris-primario);
+    margin: 0px auto;
     padding: 20px 20px 0px 20px;
 }
 
-/* Carrucel*/
-.carrucel_container{
+.visualPrincipal img{
+    width: 80%;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+/* Carrusel*/
+.carrusel_container{
     position: relative;
-    width: 90%;
+    width: 95%;
+    height: 200px;
     max-width: 800px;
-    margin: 40px auto;
+    margin: 0px auto;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.carrucel{
+.carrusel{
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
@@ -101,7 +114,7 @@ figure img{
 
 .elemento img {
     width: 100%;
-    height: auto;
+    height: 200px;
     display: block;
 }
 
