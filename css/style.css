@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: rgb(41, 41, 41);
+    background-color: var(--gris-oscuro);
 }
 
     /*Header*/
@@ -15,8 +15,8 @@ body{
 
 figure img{ 
     margin: 20px;
-    width: 200px;
-    height:70px;
+    width: 300px;
+    height:95px;
 }
 
 .cabecera_contenedor_izquierdo{
@@ -51,3 +51,5 @@ figure img{
     font-size: 26px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+/* Estilos de contenido principal*/
