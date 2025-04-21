@@ -170,6 +170,8 @@ main{
 .servicio_container{
     width: 45%;
     height: auto;
+    padding: 10px;
+    word-wrap: break-word;
     background-color: var(--negro-morado);
     border-radius: 20px;
     overflow: hidden;
@@ -184,13 +186,16 @@ main{
 }
 
 .servicio_container .descripcion{
-    
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-content: center;
     color: var(--blanco);
     font-size: small;
+}
+
+.descripcion p{
+    white-space: normal;
 }
