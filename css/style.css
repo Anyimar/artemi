@@ -157,27 +157,45 @@ main{
 /* MENU*/
 
 .menu{
-    width: 80%;
+    width: 90%;
     height: auto;
     margin: 20px auto;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 20px;
     justify-content: space-around;
 }
 
 .servicio_container{
-    width: 30%px;
-    height: 180px;
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    word-wrap: break-word;
     background-color: var(--negro-morado);
-    display: flex;
-    padding: 5px;
     border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
 }
 
-.imagen_container{
-    width: 100%;
+.imagen_container img{
+    width: 1400x;
     height: 120px;
-    background-color: #d72b60;
+    border-radius:  12px;
+}
+
+.servicio_container .descripcion{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: var(--blanco);
+    font-size: small;
+}
+
+.descripcion p{
+    white-space: normal;
 }
