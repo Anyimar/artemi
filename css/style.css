@@ -38,7 +38,8 @@ body{
 
 figure img{ 
     margin: 20px;
-    width: 300px;
+    width: 80%;
+    max-width: 300px;
     height:95px;
 }
 
@@ -174,11 +175,12 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .servicio_container{
     width: 45%;
+    max-width: 400px;
     height: auto;
     padding: 10px;
     word-wrap: break-word;
@@ -186,7 +188,12 @@ main{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
+.imagen_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .imagen_container img{
@@ -195,6 +202,7 @@ main{
     aspect-ratio: 3 / 2; /* proporción horizontal deseada */
     object-fit: cover;
     border-radius: 20px;
+    margin: 0px;
 }
 
 .servicio_container .descripcion{
@@ -210,4 +218,10 @@ main{
 
 .descripcion p{
     white-space: normal;
+}
+
+@media (max-width: 400px) {
+    .servicio_container{
+    width: 90%;
+    }
 }
