@@ -1,3 +1,18 @@
+//Js del menu desplegable
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrirB");
+const cerrar = document.querySelector("#cerrarB");
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible");
+})
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+})
+
+
+//Js del casrrucel
 const carousel = document.querySelector('.carrusel');
 const slides = document.querySelectorAll('.elemento');
 const nextBtn = document.querySelector('.next');
@@ -20,7 +35,7 @@ currentIndex = (currentIndex - 1 + slides.length) % slides.length;
 updateCarousel();
 }
 
-// Botones manuales
+    // Botones manuales
 nextBtn.addEventListener('click', () => {
 moveToNextSlide();
 resetInterval();
@@ -35,3 +50,5 @@ function resetInterval() {
 clearInterval(autoSlide);
 autoSlide = setInterval(moveToNextSlide, intervalTime);
 }
+
+
