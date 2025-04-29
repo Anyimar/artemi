@@ -35,3 +35,12 @@ function resetInterval() {
 clearInterval(autoSlide);
 autoSlide = setInterval(moveToNextSlide, intervalTime);
 }
+
+function toggleMenu() {
+    var x = document.getElementById("navegadorMenu");
+    if (x.className === "cabecera_contenedor_derecho") {
+        x.className += " responsive";
+    } else {
+        x.className = "cabecera_contenedor_derecho";
+    }
+}

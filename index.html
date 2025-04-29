@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
     </head>
     <body>
@@ -14,14 +15,18 @@
                     <img src="/assets/Artemi Firma.png" alt="logo">
                 </figure>
             </div>
-            <div class="cabecera_contenedor_derecho">
-                <ul class="nav">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+
+            <div class="cabecera_contenedor_derecho" id="navegadorMenu">
+                <a href="#home" class="active">Inicio</a>
+                <a href="#servicios">Servicio</a>
+                <a href="#nosotros" >Nosotros</a>
+                <a href="#contacto" >Contacto</a>
+    
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>.
+                </a>
             </div> 
+            
         </header>
 
         <!--Estructura de Presentacion-->
