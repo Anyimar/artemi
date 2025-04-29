@@ -4,24 +4,23 @@
         <title>Artemi Estudios</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link href="/css/style.css" rel="stylesheet">
         
     </head>
     <body>
         <header class="cabecera">
-            <div class="cabecera_contenedor_izquierdo">
-                <figure class="logo">
-                    <img src="/assets/Artemi Firma.png" alt="logo">
-                </figure>
-            </div>
-            <div class="cabecera_contenedor_derecho">
-                <ul class="nav">
+            <img class="logo" src="/assets/Artemi Firma.png" alt="logo">
+            <button class="abrir_menu" id="abrirB"><i class="bi bi-list"></i></button>
+            <nav class="nav" id="nav">
+                <button class="cerrar_menu" id="cerrarB"><i class="bi bi-x"></i></button>
+                <ul class="nav_list ">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Servicios</a></li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Contacto</a></li>
                 </ul>
-            </div> 
+            </nav> 
         </header>
 
         <!--Estructura de Presentacion-->
