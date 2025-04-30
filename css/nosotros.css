@@ -89,17 +89,61 @@ main{
 /*Estilos del contenido de la pagina*/
 
 .contenido{
-    width: 50%;
-    height: 200px;
-    color: var(--blanco);
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
+    color: var(--blanco);
+    overflow: hidden;
+    overflow-wrap: break-word;
 }
 
-.contenido h1{
-    font-size: 7rem;
+.contenido .img_contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.contenido .img_contenedor img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2; /* proporción horizontal deseada */
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0px;
+}
+
+.contenido .texto1_contenedor{
+    width: 50%;
+    min-width: 200px;
+    height: auto;
+    padding: 2rem;
+    border-radius: 2rem;
+    background-color: rgba(42, 1, 40, 0.462);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    text-align: start;
+    text-align: -moz-center;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+.contenido .texto1_contenedor h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.contenido .texto1_contenedor p{
+    font-size: 2rem;
+}
+
+
+
 
 /*
 
@@ -130,6 +174,50 @@ main{
     font-weight: 500;
     font-size: 1.3rem;
 }
+
+
+/*Responsibilidad contenido*/
+
+@media screen and (max-width: 900px) {
+    .contenido .img_contenedor img{
+        width: 100%;
+        height: 80rem;
+        aspect-ratio: 1 / 3; /* proporción horizontal deseada */
+        object-fit: cover;
+        border-radius: 2rem;
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .contenido{
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+    
+    .contenido .texto1_contenedor{
+        width: 80%;
+    }
+
+    .contenido .texto1_contenedor h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    .contenido .texto1_contenedor p{
+        font-size: 1.5rem;
+    }
+
+    .contenido .img_contenedor img{
+        width: 80%;
+        height: auto;
+        aspect-ratio: 3 / 2; 
+    }
+
+}
+
 
 
 /*Responsividad del menu desplegable, hamburguesa*/

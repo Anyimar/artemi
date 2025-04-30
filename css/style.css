@@ -90,6 +90,7 @@ main{
     justify-content: center;
     align-items: center;
     align-content: center;
+    
 
 }
 
@@ -98,6 +99,9 @@ main{
     height: 250px;
     padding: 2rem;
     text-align:start;
+    overflow: hidden;
+    overflow-wrap: break-word;
+
 }
 
 .titulo_Presentacion h1{
@@ -115,6 +119,8 @@ main{
     text-align: right;
     text-align: -moz-center;;
     align-items: flex-end;
+    overflow: hidden;
+    overflow-wrap: break-word;
 
 }
 
