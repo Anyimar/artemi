@@ -87,7 +87,7 @@ main{
 }
 
 .titulo_Presentacion h1{
-    margin-left: 1.5rem;
+    margin-left: 7rem;
     color: var(--blanco);
     font-size: 7rem;
     font-weight: 700;
@@ -96,7 +96,7 @@ main{
 .parrafo_Presentacion{
     width: 38%;
     height: 300px;
-    padding: 3rem;
+    padding: 3rem 2rem 2rem 0.4rem;
     display: flex;
     text-align: right;
     align-items: flex-end;
@@ -104,29 +104,11 @@ main{
 }
 
 .parrafo_Presentacion p{
-    font-size: 1.7rem;
-    margin-right: 2rem;
+    font-size: 2.3rem;
     font-weight: 500;
     color: var(--blanco);
 }
 
-
-/* Cuadro para la imagen*/
-.visualPrincipal{
-    display: flex;
-    justify-content: center;
-    width: 90%;
-    height: 200px;
-    margin: 0px auto;
-    padding: 20px 20px 0px 20px;
-}
-
-.visualPrincipal img{
-    width: 80%;
-    height: 200px;
-    object-fit: cover;
-    
-}
 
 /*Estilos del Body*/
 
@@ -145,7 +127,7 @@ body{
     width: 80%;
     height: 300px;
     min-width: 200px;
-    max-width: 650px;
+    max-width: 950px;
     margin: 0px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -288,10 +270,40 @@ body{
 
 /*Responsivos de titulo*/
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
+    .parrafo_Presentacion p{
+        font-size: 2.1rem;
+        margin-right: 6rem;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .parrafo_Presentacion p{
+        font-size: 1.7rem;
+        margin-right: 6rem;
+    }
+
     .titulo_Presentacion h1{
-        margin-left: 1.2rem;
-        font-size: 5rem;
+        margin-left: 3rem;
+        color: var(--blanco);
+        font-size: 6rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    .titulo_Presentacion h1{
+        margin-left: 1.6rem;
+        font-size: 5.5rem;
+    }
+    .parrafo_Presentacion p{
+        font-size: 1.6rem;
+        margin-right: 3rem;
+        font-weight: 500;
+        color: var(--blanco);
     }
     
 }
@@ -307,7 +319,7 @@ body{
     .titulo_Presentacion{
         width: 80%;
         height: auto;
-        padding: 1rem;
+        padding: 1.2rem;
         text-align:left;
     
     }
@@ -329,8 +341,8 @@ body{
     }
     
     .parrafo_Presentacion p{
-        font-size: 1.2rem;
-        margin-right: 1rem;
+        font-size: 2rem;
+        margin-right: 1.4rem;
         color: var(--blanco);
     }
 
