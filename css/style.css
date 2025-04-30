@@ -24,6 +24,17 @@ html {
     --negro-vino: #4c0e2d;
 }
 
+/*Estilos del Body*/
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--gris-oscuro);
+}
+
 /*Header*/
 .cabecera{
     width: 100%;
@@ -61,13 +72,15 @@ html {
 }
 
 
-/* Estilos de contenido principal*/
+/* Estilos de contenedor principal*/
 main{
     background-image: url(/assets/Fondos/bosqueMorado.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/*Estilos de titulo*/
 
 .presentacion{
     width: 80%;
@@ -109,18 +122,6 @@ main{
     font-size: 2.3rem;
     font-weight: 500;
     color: var(--blanco);
-}
-
-
-/*Estilos del Body*/
-
-body{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    background-color: var(--gris-oscuro);
 }
 
 /* Carrusel*/
