@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 html {
@@ -62,26 +63,52 @@ html {
 
 /* Estilos de contenido principal*/
 main{
-    background-color: var(--gris-primario);
+    background-image: url(/assets/Fondos/bosqueMorado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-
-/* Cuadro para la imagen*/
-.visualPrincipal{
+.presentacion{
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
     display: flex;
-    justify-content: center;
-    width: 90%;
-    height: 200px;
-    margin: 0px auto;
-    padding: 20px 20px 0px 20px;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+
 }
 
-.visualPrincipal img{
-    width: 80%;
-    height: 200px;
-    object-fit: cover;
-    
+.titulo_Presentacion{
+    width: 60%;
+    height: 300px;
+    padding: 2rem;
+    text-align:start;
 }
+
+.titulo_Presentacion h1{
+    margin-left: 7rem;
+    color: var(--blanco);
+    font-size: 7rem;
+    font-weight: 700;
+}
+
+.parrafo_Presentacion{
+    width: 38%;
+    height: 300px;
+    padding: 3rem 2rem 2rem 0.4rem;
+    display: flex;
+    text-align: right;
+    align-items: flex-end;
+
+}
+
+.parrafo_Presentacion p{
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: var(--blanco);
+}
+
 
 /*Estilos del Body*/
 
@@ -97,10 +124,10 @@ body{
 /* Carrusel*/
 .carrusel_container{
     position: relative;
-    width: 90%;
-    min-width: 70%;
-    height: 200px;
-    max-width: 800px;
+    width: 80%;
+    height: 300px;
+    min-width: 200px;
+    max-width: 950px;
     margin: 0px auto;
     overflow: hidden;
     border-radius: 10px;
@@ -120,7 +147,7 @@ body{
 
 .elemento img {
     width: 100%;
-    height: 200px;
+    height: 300px;
     display: block;
 }
 
@@ -163,9 +190,9 @@ body{
 /* MENU*/
 
 .menu{
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin: 20px auto;
+    margin: 4rem auto;
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
@@ -180,7 +207,7 @@ body{
     height: auto;
     padding: 1rem;
     overflow-wrap: break-word;
-    background-color: var(--negro-morado);
+    background-color: var(--gris-primario);
     border-radius: 2rem;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -216,6 +243,113 @@ body{
     white-space: normal;
 }
 
+
+/*Estilos del pie de pagina*/
+
+.pie_pagina{
+    width: 100%;
+    height: 150px;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--negro);
+}
+
+.logoF{
+    max-width: 14rem;
+}
+
+.pie_pagina a{
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+/*Responsivos de titulo*/
+
+@media screen and (max-width: 1200px) {
+    .parrafo_Presentacion p{
+        font-size: 2.1rem;
+        margin-right: 6rem;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .parrafo_Presentacion p{
+        font-size: 1.7rem;
+        margin-right: 6rem;
+    }
+
+    .titulo_Presentacion h1{
+        margin-left: 3rem;
+        color: var(--blanco);
+        font-size: 6rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    .titulo_Presentacion h1{
+        margin-left: 1.6rem;
+        font-size: 5.5rem;
+    }
+    .parrafo_Presentacion p{
+        font-size: 1.6rem;
+        margin-right: 3rem;
+        font-weight: 500;
+        color: var(--blanco);
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .presentacion{
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 2rem;
+    }
+    
+    .titulo_Presentacion{
+        width: 80%;
+        height: auto;
+        padding: 1.2rem;
+        text-align:left;
+    
+    }
+
+    .titulo_Presentacion h1{
+        margin-left: 1rem;
+        color: var(--blanco);
+        font-size: 4rem;
+    }
+
+    .parrafo_Presentacion{
+        width: 80%;
+        height: auto;
+        padding: 2rem;
+        display: flex;
+        text-align: right;
+        align-items: center;
+    
+    }
+    
+    .parrafo_Presentacion p{
+        font-size: 2rem;
+        margin-right: 1.4rem;
+        color: var(--blanco);
+    }
+
+}
+
+
+/*Responsivo de tarjetas de menu*/
 @media (max-width: 400px) {
     .servicio_container{
     width: 90%;
@@ -251,6 +385,7 @@ body{
         top: 0;
         right: 0;
         bottom: 0;
+        height: 100%;
         padding: 2rem; 
         display: flex;
         flex-direction: column;
@@ -273,5 +408,20 @@ body{
     .nav_list li a{
         text-decoration: none;
         color: var(--blanco);
+    }
+}
+
+/*Responsivo del pie de pagina*/
+
+@media screen and (max-width: 600px){
+    .logoF{
+        max-width:  13rem;
+    }
+
+    .pie_pagina a{
+        text-decoration: none;
+        color: var(--blanco);
+        font-weight: 500;
+        font-size: 1rem;
     }
 }
