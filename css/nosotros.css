@@ -72,15 +72,12 @@ body{
 
 /* Estilos de contenedor principal*/
 main{
-    background-image: url(/assets/Fondos/bosqueMorado.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: var(--negro-morado);
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-
 }
 
 /*
@@ -88,7 +85,7 @@ main{
 */
 /*Estilos del contenido de la pagina*/
 
-.contenido{
+.contenido1{
     width: 90%;
     height: auto;
     margin: 2rem auto;
@@ -101,13 +98,13 @@ main{
     overflow-wrap: break-word;
 }
 
-.contenido .img_contenedor{
+.contenido1 .img_contenedor{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contenido .img_contenedor img{
+.contenido1 .img_contenedor img{
     width: 100%;
     height: auto;
     aspect-ratio: 3 / 2; /* proporción horizontal deseada */
@@ -116,13 +113,13 @@ main{
     margin: 0px;
 }
 
-.contenido .texto1_contenedor{
+.contenido1 .texto1_contenedor{
     width: 50%;
     min-width: 200px;
     height: auto;
     padding: 2rem;
     border-radius: 2rem;
-    background-color: rgba(42, 1, 40, 0.462);
+    /*background-color: rgba(42, 1, 40, 0.462);*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,12 +130,38 @@ main{
     overflow-wrap: break-word;
 }
 
-.contenido .texto1_contenedor h1{
+.contenido1 .texto1_contenedor h1{
     font-size: 4rem;
     font-weight: 700;
 }
 
-.contenido .texto1_contenedor p{
+.contenido1 .texto1_contenedor p{
+    font-size: 2rem;
+}
+
+.contenido2{
+    width: 100%;
+    height: auto;
+    min-height: 30rem;
+    margin: 2rem auto;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    color: var(--blanco);
+    overflow: hidden;
+    overflow-wrap: break-word;
+    background-color: #121111;
+}
+
+.contenido2 h2{
+    font-size: 5rem;
+}
+
+.contenido2 p{
     font-size: 2rem;
 }
 
@@ -179,10 +202,25 @@ main{
 /*Responsibilidad contenido*/
 
 @media screen and (max-width: 900px) {
-    .contenido .img_contenedor img{
-        width: 100%;
-        height: 80rem;
-        aspect-ratio: 1 / 3; /* proporción horizontal deseada */
+    .contenido1{
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+
+    .contenido1 .texto1_contenedor{
+        width: 80%;
+    }
+
+    .contenido2{
+        padding: 4rem 6rem;
+        height: auto;
+    }
+
+    .contenido1 .img_contenedor img{
+        width: 80%;
+        height: auto;
+        aspect-ratio: 3 / 2; /* proporción horizontal deseada */
         object-fit: cover;
         border-radius: 2rem;
         margin: 0px;
@@ -191,26 +229,19 @@ main{
 }
 
 @media screen and (max-width: 700px) {
-    .contenido{
-        height: auto;
-        flex-direction: column-reverse;
-        justify-content: start;
-    }
-    
-    .contenido .texto1_contenedor{
-        width: 80%;
-    }
 
-    .contenido .texto1_contenedor h1{
+    .contenido1 .texto1_contenedor h1, 
+    .contenido2 .titulo{
         font-size: 2.5rem;
         font-weight: 500;
     }
     
-    .contenido .texto1_contenedor p{
+    .contenido1 .texto1_contenedor p, 
+    .contenido2 .parrafo{
         font-size: 1.5rem;
     }
 
-    .contenido .img_contenedor img{
+    .contenido1 .img_contenedor img{
         width: 80%;
         height: auto;
         aspect-ratio: 3 / 2; 
