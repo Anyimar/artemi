@@ -117,11 +117,16 @@ main{
 .contenido .instagram a,
 .contenido .ws a,
 .contenido .correo a{
+    display: inline-block;
     text-decoration: none;
     color: var(--blanco);
+    padding: 10px 20px;
+    border-radius: 4rem;
     font-weight: 500;
     font-size:2rem;
+    border: #ffffffc1 0.1rem solid;
 }
+
 
 .tarjeta:hover{
     width: 90%;

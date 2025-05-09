@@ -80,6 +80,9 @@ main{
     justify-content: center;
 }
 
+
+
+
 /*
 
 */
@@ -165,6 +168,24 @@ main{
     font-size: 2rem;
 }
 
+/*Galeria de iconos realizados por artemi esrudios*/
+.contenido2 .logo-grid {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+}
+
+.contenido2 .logo-grid img {
+    width: 4rem;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.contenido2 .logo-grid img:hover {
+    transform: scale(1.1);
+}
 
 
 
